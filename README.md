@@ -56,7 +56,11 @@ Make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https:
 18. Select *Start Now*, you should now be redirected to the dashboard. Once the app finishes
 pulling down all of the containers, you can go to your new instance via the dashboard.
 
+## Vagrant Specific
 
+We are using Vagrant [multi-machine](https://www.vagrantup.com/docs/multi-machine/) which allows us to spin up a little mini cluster like this. If you need to access the individual machines via SSH you just need to add their names.
+
+`vagrant ssh services` or `vagrant ssh builder`
 ## Troubleshooting
 [1] The most common cause of issues is port collisions. We are forwarding the following
 ports on the services box:
