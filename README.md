@@ -13,6 +13,7 @@ Make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https:
 2. `cd ccie-vagrant` and run `vagrant up`[1]
 3. Go get a coffee, this will take a while
 4. Once the Services Box finishes provisioning you will see the following output in the terminal:
+
     ```
     ==> services: ####################################################################################
     ==> services: ## Services box is getting ready.  Please follow the installation
@@ -26,6 +27,7 @@ Make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https:
 7. Select Choose license and grab the `support--internal.rli` license that is included in this repo.
 8. Enter a password to secure the admin console (since we are using ngrok this will be accessible form the outside world, be sure to secure it!)
 9. `ngrok` is included in this repo, set up a local tunnel so that GitHub can communicate with our local instance. `./ngrok http 192.168.205.10:80` if all goes well you should now see something like this in your terminal:
+
     ```
     ngrok by @inconshreveable                                                                                             (Ctrl+C to quit)
 
