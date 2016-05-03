@@ -56,6 +56,12 @@ Make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https:
 18. Select *Start Now*, you should now be redirected to the dashboard. Once the app finishes
 pulling down all of the containers, you can go to your new instance via the dashboard.
 
+## Usage
+
+1. You can now log in to CCIE the same way as you normally would. Auth with GitHub, follow some projects, run some builds. Please note, the initial download[2] takes a bit of time. Depending on your internet speed you may be waiting around for a while.
+
+
+
 ## Vagrant Specific
 
 We are using Vagrant [multi-machine](https://www.vagrantup.com/docs/multi-machine/) which allows us to spin up a little mini cluster like this. If you need to access the individual machines via SSH you just need to add their names.
@@ -74,3 +80,5 @@ services: 22 => 2222 (adapter 1)
 ```
 
 Make sure none of these are in use locally.
+
+[2] The initial download of the container image takes quite a bit of time. Once everything is ready you will see the containers available under fleet-state and you can start builds. Be patient, if you are bored you can check the status of the initial image download with `watch -n 1 ls -al /mnt/tmp`
