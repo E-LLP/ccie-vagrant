@@ -8,6 +8,9 @@ Allows you to run CircleCI Enterprise Locally using VirtualBox, Vagrant, and Ngr
 ## Pre Reqs
 Make sure you have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) installed.
 
+## Configuration
+1. Feel free to change `CIRCLE_CONTAINER_IMAGE_URI=` in `vagrant_init_builder.sh` to a bucket closer to you. We are pulling from US-West-2 by default.
+
 ## Installation
 1. Clone this repo: `git clone git@github.com:circleci/ccie-vagrant.git`
 2. `cd ccie-vagrant` and run `vagrant up`[1]
