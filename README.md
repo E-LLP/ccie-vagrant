@@ -60,7 +60,9 @@ pulling down all of the containers, you can go to your new instance via the dash
 
 1. You can now log in to CCIE the same way as you normally would. Auth with GitHub, follow some projects, run some builds. Please note, the initial download[2] takes a bit of time. Depending on your internet speed you may be waiting around for a while.
 
+## Caveats
 
+1. If you need to go back to the replicated console, you cannot do so from within the app since ngrok is only forwarding the single port. You can get there manually by going to https://192.168.205.10:8800/dashboard.
 
 ## Vagrant Specific
 
