@@ -16,6 +16,7 @@ sudo \
   CIRCLE_CONTAINER_MEMORY_LIMIT="1G" \
   CIRCLE_SECRET_PASSPHRASE='d3d662b598d773393f9d81fb6ff5b6cc571e555a' \
   CIRCLE_CONTAINER_CPUS="1" \
+  CIRCLE_CONTAINER_IMAGE_URI="https://s3-eu-west-1.amazonaws.com/circleci-enterprise-assets-eu-west-1/containers/circleci-trusty-container_0.0.1.tar.gz" \
   bash ./init-builder.sh
 
 # Start up CircleCI Services
