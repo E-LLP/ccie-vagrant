@@ -12,6 +12,7 @@ sudo truncate -s 40G /tmp/sparse-file.img
 # Initialize the Builders
 sudo \
   SERVICES_PRIVATE_IP="192.168.205.10" \
+  CIRCLE_PRIVATE_IP="192.168.205.11" \
   CIRCLE_BUILD_VOLUMES="/tmp/sparse-file.img" \
   CIRCLE_CONTAINER_MEMORY_LIMIT="1G" \
   CIRCLE_SECRET_PASSPHRASE='d3d662b598d773393f9d81fb6ff5b6cc571e555a' \
